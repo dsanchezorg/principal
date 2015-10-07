@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Conversor_Decimal_Binario {
+
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		
+		long decimal = 0, auxiliar=decimal;
+		String binario="";
+		
+		while(auxiliar > 0){
+			binario = auxiliar%2 + binario;
+			
+			auxiliar= auxiliar/2;
+			
+		}
+		System.out.println("El numero decimal "+decimal+" en binario es "+binario);
+	}
+
+}

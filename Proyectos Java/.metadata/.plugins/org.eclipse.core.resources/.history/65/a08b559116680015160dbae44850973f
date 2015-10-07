@@ -1,0 +1,29 @@
+
+public class Ejercicio2_CaraCruz {
+
+	public static void main(String[] args) {
+	boolean moneda=false;
+	int tirada=0, contador=0, cara=0, cruz=0;
+
+	while (!moneda){
+		tirada=(int)(Math.random()*2)+1;
+		if(!(tirada==1)){
+		  cara++;
+		  contador++;
+		  if(cara==3){
+			  moneda=true;
+			  contador++;
+			  System.out.println("Ha sacado 3 caras seguidas");
+		  }
+			  
+		}else{
+		  cruz++;
+		  cara=0;
+		  contador++;
+		}
+		System.out.println("Ha tardado "+contador+" tiradas en en sacar tres cruces seguidas");
+		System.out.println("Ha sacado "+cara+ "caras y "+cruz+" cruces");
+	}
+	}
+
+}

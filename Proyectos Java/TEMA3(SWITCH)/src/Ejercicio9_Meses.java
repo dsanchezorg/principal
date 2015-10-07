@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Ejercicio9_Meses {
 	    public static void main(String[] args) {
-	    	Scanner teclado=new Scanner(System.in);
+	    	@SuppressWarnings("resource")
+			Scanner teclado=new Scanner(System.in);
 	    	
 	        int mes = 0;
 	        

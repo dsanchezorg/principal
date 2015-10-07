@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Ejercicio5_Cuadrante {
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner teclado=new Scanner(System.in);
 		int x=0, y=0;
 		

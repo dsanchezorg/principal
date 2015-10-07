@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Ejercicio6_Monedas {
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner teclado=new Scanner(System.in);
 		double cantidad=0;
 		double cts50=0;

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Ejercicio5_ComparaString {
+
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		
+		String compara1="", compara2="";
+		int nCadenas=0;
+		
+		nCadenas=(int)(Math.random()*10)+1;
+		
+		System.out.println(+nCadenas);
+
+	}
+
+}

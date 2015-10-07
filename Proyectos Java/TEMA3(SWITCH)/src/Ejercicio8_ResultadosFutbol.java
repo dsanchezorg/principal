@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Ejercicio8_ResultadosFutbol {
 		public static void main(String[] args) {
+			@SuppressWarnings("resource")
 			Scanner teclado=new Scanner(System.in);
 			int glocal=0, gvisitante=0, resultado=0;
 			

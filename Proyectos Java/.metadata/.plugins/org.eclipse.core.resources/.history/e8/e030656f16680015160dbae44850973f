@@ -1,0 +1,18 @@
+
+public class Ejercicio2_CaraCruz {
+
+	public static void main(String[] args) {
+	boolean moneda=false;
+	int tirada=0, contador=0, cara=0, cruz=0;
+
+	while (!moneda){
+		tirada=(int)(Math.random()*2)+1;
+		if(!(tirada==1 && cara==3)){
+		  cara++;	
+		}else if (tirada==2){
+			
+		}
+	}
+	}
+
+}

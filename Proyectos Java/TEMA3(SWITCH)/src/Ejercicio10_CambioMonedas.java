@@ -5,6 +5,7 @@ public class Ejercicio10_CambioMonedas {
 
 	public static void main(String[] args) {
 
+				@SuppressWarnings("resource")
 				Scanner teclado=new Scanner(System.in);
 				DecimalFormat df=new DecimalFormat("0.00");
 				

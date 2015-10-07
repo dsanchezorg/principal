@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Ejercicio2_LeeNumero {
+	
+	    public static void main(String[] ar) {
+	        Scanner teclado=new Scanner(System.in);
+	        int suma,f,valor,promedio;
+	        suma=0;
+	        for(f=1;f<=10;f++) {
+	            System.out.print("Ingrese valor:"+f);
+	            valor=teclado.nextInt();
+	            suma=suma+valor;
+	        }
+	        System.out.print("La suma es:");
+	        System.out.println(suma);
+	    }
+	}

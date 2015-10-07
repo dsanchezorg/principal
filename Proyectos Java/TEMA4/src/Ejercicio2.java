@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner teclado=new Scanner(System.in);
 		int n1=0, n2=0, n3=0, resultado=0;
 		

@@ -3,7 +3,8 @@ public class Ejercicio3_Menoresde10_2 {
 
 
 		public static void main(String[] args) {
-			int n1=0, n2=0, n3=0, resultado=0;
+			int n1=0, n2=0, n3=0;
+			@SuppressWarnings("resource")
 			Scanner teclado=new Scanner(System.in);
 			
 			System.out.print("introdce un primer numero");

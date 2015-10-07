@@ -2,10 +2,11 @@ import java.util.Scanner;
 public class Ejercicio7_Ingresos {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner teclado=new Scanner(System.in);
 		
-		double saldoinicial=0, saldofinal=0, cantidad=0;
-		char i=0 , r=0, tecla;
+		double saldoinicial=0, cantidad=0;
+		char tecla;
 		
 		System.out.print("De cuanto es su saldo inicial?");
 		saldoinicial=teclado.nextDouble();

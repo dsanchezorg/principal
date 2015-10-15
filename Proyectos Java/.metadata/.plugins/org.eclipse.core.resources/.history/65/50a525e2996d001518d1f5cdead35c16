@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		int numero=0, numerocontador=0, aux=0, impar=0, acumulaimpar=0, mayor=0;
+		boolean flag=false;
+		System.out.println("Introduce un numero");
+		numero=teclado.nextInt();
+		
+		while(numero < 0){
+			numerocontador++;
+			aux=numero%2;
+				if(aux != 0){
+					impar+=numero;
+					acumulaimpar++;
+				}else{
+					if(!flag){
+						mayor=numero;
+						flag=true;
+					}
+					else if(numero > mayor){
+						mayor=numero;
+					}
+					}
+				}
+			
+			
+		}
+
+	}
+
+

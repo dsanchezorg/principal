@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Ejercicio8_Alumnos {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner(System.in);
 		
 		int x=0, edad=0, suma1=0, suma2=0, suma3=0, promedio1=0, promedio2=0, promedio3=0, promediototal=0;

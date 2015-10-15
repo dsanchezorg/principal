@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Ejercicio7_Piramide{
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		char espacio=' ', asterisco='*';
+		int x=5;
+		
+		for(int i=1; i<=x; i++){
+			for(int espacios=x-i; espacios>0; espacios--)
+				System.out.print(espacio);
+			for(int asteriscos=1; asteriscos<2*i; asteriscos++)
+				System.out.print(asterisco);
+			System.out.println("");
+		}
+	}	
+}
+
+/*
+ public class Ejercicio7_Piramide {
+
+	public static void main(String[] args) {
+		        char espacio='-', asterisco='*';
+		        int x=5;
+
+		        for(int i=1; i<=x; i++){
+		            for(int espacios=x-i; espacios>0; espacios--)
+		                System.out.print(espacio);
+		            for(int lineas=1; lineas<2*i; lineas++)
+		                System.out.print(asterisco);
+		            System.out.println("");
+		        }
+		    }
+		
+	}*/
+

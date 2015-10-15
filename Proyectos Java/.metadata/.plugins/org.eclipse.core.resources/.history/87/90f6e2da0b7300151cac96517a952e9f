@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Ejercicio12_MuestraCarac {
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		
+		String cadena="";
+		int largo=0;
+		
+		System.out.println("Introduce una palabra por teclado");
+		cadena=teclado.nextLine();
+		
+		largo=cadena.length();
+		
+		System.out.println(largo);
+		
+		
+	}
+}

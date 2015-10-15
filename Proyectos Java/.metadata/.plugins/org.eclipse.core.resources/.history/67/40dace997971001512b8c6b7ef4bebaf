@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Ejercicio7_CuadradoHueco {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner teclado=new Scanner(System.in);
+		int tamanio=0;
+		
+		System.out.println("Introduce un numero para detenerminar el cuadrado");
+		tamanio=teclado.nextInt();
+		
+		for(int t=1; t<tamanio; t++){
+			System.out.print("*");
+		}
+		System.out.print("\n");
+		System.out.print("*");
+		for(int l=1; l<=tamanio-2; l++){
+			
+		}
+	}
+
+}

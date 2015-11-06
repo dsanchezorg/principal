@@ -1,0 +1,46 @@
+
+public class Ej3 {
+		
+		static int [] valores;
+
+		public static void cargaValores(){
+			valores=new int[15];
+			int numeroValores=0;
+			System.out.println("Estos son los 15 valores aleatorios");
+			
+			for(int i=0; i<valores.length; i++){
+				numeroValores=(int)(Math.random()*500)+1;
+				valores[i]=numeroValores;
+				System.out.print(valores[i]+" ");
+			}
+			System.out.println("\n");
+			
+		}
+		
+		public static void valoresMayoresMenores(){
+			int acumulador=0, mayor=0, menor=500;
+			
+			for(int i=0; i<valores.length; i++){
+					if(valores[i]<menor){
+						menor=valores[i];
+					}
+					if(valores[i]>mayor){
+						mayor=valores[i];
+					}
+				}
+			System.out.println("El numero mayor es "+mayor);
+			System.out.println("El numero menor es "+menor);
+		}
+		
+		
+		
+		public static void main(String[] args) {
+			
+			
+			cargaValores();
+			valoresMayoresMenores();
+
+		}
+
+	}
+

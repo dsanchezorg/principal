@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Ej6_InvierteValores {
+
+	public static int[] vector;
+	static int inicial=0;
+	
+			public static void cargaValores(){
+				Scanner teclado=new Scanner(System.in);
+				inicial=teclado.nextInt();
+				
+				for(int i=0; i<30; i++){
+					vector[i]=inicial++;
+				}
+				for(int j=vector[29]; j>vector[0]; j--){
+					System.out.print(vector[j]);
+				}
+			}
+	
+	public static void main(String[] args) {
+		cargaValores();
+
+	}
+
+}

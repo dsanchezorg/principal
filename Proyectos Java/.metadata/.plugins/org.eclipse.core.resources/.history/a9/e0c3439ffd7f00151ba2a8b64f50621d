@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Operaciones {
+	private int valor1=0, valor2=0;
+	
+	public void cargarValores(){
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Intruduce el primer valor");
+		valor1=teclado.nextInt();
+		System.out.println("Intruduce el segundo valor");
+		valor2=teclado.nextInt();
+	}
+	
+	public int suma(){
+		int resultadoSuma=0;
+		resultadoSuma=valor1+valor2;
+		return resultadoSuma;
+	}
+	
+	public int resta(){
+		int resultadoResta=0;
+		resultadoResta=valor1-valor2;
+		return resultadoResta;
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		int a=0;
+			Operaciones cuenta=new Operaciones();
+			cuenta.cargarValores();
+			cuenta.suma();
+			
+	}
+
+}

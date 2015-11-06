@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class ModificaFrases {
+	static String frase="";	
+	
+	public static void imprimir(String frase2){
+		int a=0;
+		a=frase.length();
+		if(a==1){
+			System.out.println("Su cadena mide "+a+" caracter");
+		}else{
+			System.out.println("Su cadena mide "+a+" caracteres");
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner teclado=new Scanner(System.in);
+		String frase="";
+		
+		System.out.println("Introduce una frase");
+		frase=teclado.nextLine();
+		
+		imprimir(frase);
+		
+
+	}
+
+}

@@ -1,0 +1,43 @@
+public class Ej4_ParesImpares{
+
+		static int [] valores;
+		
+		public static void cargaValores(){
+			
+			valores=new int[10];
+			int numeroValores=0;
+			System.out.println("Estos son los 10 valores aleatorios");
+			
+			for(int i=0; i<valores.length; i++){
+				numeroValores=(int)(Math.random()*10)+1;
+				valores[i]=numeroValores;
+				System.out.print(valores[i]+" ");
+			}
+			System.out.println("\n");
+			
+		}
+		
+		public static void operaValores(){
+			 int suma=0, multi=1;
+			for(int i=1; i<valores.length; i+=2){
+					multi=multi*valores[i];
+				}
+			for(int i=0; i<valores.length; i+=2){
+				suma=suma+valores[i];
+			}
+			
+			System.out.println("La suma de los valores pares da: "+suma);
+			System.out.println("La multiplicacion de los valores impares da: "+multi);
+			}
+			
+
+		
+		
+		public static void main(String[] args) {
+			
+			cargaValores();
+			operaValores();
+
+		}
+
+	}

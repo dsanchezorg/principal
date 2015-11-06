@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Ej2_CompruebaNotas {
+	
+	static int [] notas;
+	
+			public static void cargaNotas(){
+				notas=new int[30];
+				int valorNota=0;
+				
+				for(int i=0; i<notas.length; i++){
+					valorNota=(int)(Math.random()*10);
+					notas[i]=valorNota;
+				}
+			}
+			
+			public static void compruebaNotas(){
+				int notaComprobar=0, acumulador=0;
+				Scanner teclado=new Scanner(System.in);
+				
+				System.out.println("Introduce la nota que quieres comprobar");
+				notaComprobar=teclado.nextInt();
+				
+				for(int i=0; i<notas.length; i++){
+					if(notas[i]==notaComprobar){
+						acumulador++;
+					}
+				}
+				System.out.println(acumulador+ " alumn@/@s han sacado "+notaComprobar);
+			}
+	
+	public static void main(String[] args) {
+		cargaNotas();
+		compruebaNotas();
+	}
+
+}

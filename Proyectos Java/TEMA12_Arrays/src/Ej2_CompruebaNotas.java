@@ -1,0 +1,50 @@
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Ej2_CompruebaNotas {
+	
+	static int [] notas;
+	
+			public static void cargaNotas(){
+				notas=new int[30];
+				int valorNota=0;
+				
+				for(int i=0; i<notas.length; i++){
+					valorNota=(int)(Math.random()*10);
+					notas[i]=valorNota;
+				}
+			}
+			
+			public static void compruebaNotas(){
+				int notaComprobar=0, acumulador=0;
+				String comprobador="";
+				@SuppressWarnings("resource")
+				Scanner teclado=new Scanner(System.in);
+				Pattern pat = Pattern.compile("\\d|10");
+				
+				
+				System.out.println("Introduce la nota que quieres comprobar");
+				notaComprobar=teclado.nextInt();
+				comprobador=Integer.toString(notaComprobar);
+				Matcher mat = pat.matcher(comprobador);
+				
+				if(mat.matches()){
+				
+				for(int i=0; i<notas.length; i++){
+					if(notas[i]==notaComprobar){
+						acumulador++;
+					}
+				}
+				System.out.println(acumulador+ " alumn@/@s han sacado "+notaComprobar);
+			}else{
+				System.out.println("Error, no ha introducido un numero");
+			}
+		}
+	
+	public static void main(String[] args) {
+		cargaNotas();
+		compruebaNotas();
+	}
+
+}

@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class ModificaFrases {
+	static String frase="";	
+	
+	public static void imprimir(String frase){
+		int a=0;
+		a=frase.length();
+		if(a==1){
+			System.out.println("Su cadena mide "+a+" caracter");
+		}else{
+			System.out.println("Su cadena mide "+a+" caracteres");
+		}
+		
+	
+	}
+	
+	public static void cuentaPalabrasDe4(String frase){
+		int longitudPalabra=0, contadorPalabras=0;
+		String letra="";
+		
+		for(int i=1; i<=frase.length(); i++){
+			letra=frase.substring(i-1, i);
+			
+			if(letra.equals(" ") && longitudPalabra==4){
+				contadorPalabras++;
+				longitudPalabra=0;
+			}else if(letra!=" "){
+				longitudPalabra++;
+			}
+		}	
+		if(longitudPalabra==4){
+			contadorPalabras++;
+		}
+		System.out.println("Usted tiene un total de "+contadorPalabras+" palabra/as con 4 letras");
+	}
+	
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner teclado=new Scanner(System.in);
+		String fraseMain="";
+		
+		System.out.println("Introduce una frase");
+		fraseMain=teclado.nextLine();
+		
+		imprimir(fraseMain);
+		cuentaPalabrasDe4(fraseMain);
+
+	}
+}
